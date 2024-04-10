@@ -4,177 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9room</title>
-<style>
-    *{margin: 0; padding: 0; list-style: none;}
-        .screen_out {display: none;}
-        label, button, li>a {cursor: pointer;}
+    <style>
+        a {
+            text-decoration: none;
+            color: white;
+        }
 
-    body {background-color: #FFD057;}
-    header {display: flex; position: fixed;  justify-content: center; border: 1px solid red; width: 100%; margin: 0 auto; left:0; right:0; }
-    header nav {background-color: rgba(255, 255, 255, 0.2); box-shadow: 0 0 13px rgba(254, 131, 13, 0.5); height: 46px; width: 742px; border-radius: 23px; margin: 30px auto;}
-    header nav ul {margin: auto auto; width: fit-content; height: 46px; display: flex;  justify-content: center; gap: 0 10px;}
-    header nav ul li { height: 20px; width: 100px; border-radius: 20px;  margin: auto 0; border: 1px solid green;}
+        body {
+            background-color: #FFD057;
+        }
 
-    #lang {margin: auto 0; position: absolute; left: 371px; top: 10px;}
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
 
+        header ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 16px;
+            padding: 16px;
+            background: #FFFFFF22;
+            border-radius: 32px;
+            box-shadow: 0px 0px 46px -4px rgba(255,165,0,0.75);
+            -webkit-box-shadow: 0px 0px 46px -4px rgba(255,165,0,0.75);
+            -moz-box-shadow: 0px 0px 46px -4px rgba(255,165,0,0.75);
+        }
 
+        header ul li {
+            padding: 4px 8px;
+            min-width: 100px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid white;
+        }
 
+        header ul li:hover {
+            background: black;
+            border-color: black;
+        }
 
-    main section h1 {background: url(img/9room\ 가로로고-02.png)no-repeat; padding-top: 100px;}
-    
-</style>
+        header ul li:hover a {
+            color: black;
+        }
+
+    </style>
 </head>
 <body>
 <header>
-<h2 class="screen_out">9room 주요서비스</h2>
     <nav>
         <ul>
-            <li><a href="#home">홈</a></li>
-            <li><a href="#hi">인사 말</a></li>
-            <li><a href="#profile">자기소개</a></li>
-            <li><a href="#gallery">갤러리</a></li>
-            <li><a href="https://guroom.tistory.com/">작업일기</a></li>
-            <li><a href="#contact">연락</a></li>
+            <li style="background: #FFD057"><a href="#home">홈</a></li>
+            <li style="background: orange"><a href="#hi">인사 말</a></li>
+            <li style="background: #f85656"><a href="#profile">자기소개</a></li>
+            <li style="background: #f8a7b5"><a href="#gallery">갤러리</a></li>
+            <li style="background: #43cccc"><a href="https://guroom.tistory.com/">작업일기</a></li>
+            <li style="background: #3b80de"><a href="#contact">연락</a></li>
         </ul>
     </nav>
-<h2 class="screen_out">언어설정</h2>    
-    <ul id="lang">
-        <li><a href="#">아</a></li>
-        <li><a href="#">あ</a></li>
-        <li><a href="#">A</a></li>
-    </ul>
 </header>
 <main>
-<section id="home">
-    <h1>9room portfolio</h1>
-    <h2>9room 메인 홈</h2>
-    <img src="img/imsi_img.jpg" alt="간판작품1"style="width:300px; height:300px;">
-    <img src="img/imsi_img.jpg" alt="간판작품2"style="width:300px; height:300px;">
-    <img src="img/imsi_img.jpg" alt="간판작품3"style="width:300px; height:300px;"> 
-    <img src="img/imsi_img.jpg" alt="간판작품4"style="width:300px; height:300px;"> 
-    <img src="img/imsi_img.jpg" alt="간판작품5"style="width:300px; height:300px;">
-    <img src="img/imsi_img.jpg" alt="간판작품6"style="width:300px; height:300px;"> 
-</section>
+    <section id="home">
+<!--        <h1>9room portfolio</h1>-->
+<!--        <h2>9room 메인 홈</h2>-->
+        <img src="img/imsi_img.jpg" alt="간판작품1" style="width:300px; height:300px;">
+        <img src="img/imsi_img.jpg" alt="간판작품2" style="width:300px; height:300px;">
+        <img src="img/imsi_img.jpg" alt="간판작품3" style="width:300px; height:300px;">
+    </section>
 
-<section id="hi">
-<h2>9room 인삿말</h2>
-<img src="img/인사 안녕하세요-단순화.svg" alt="안녕하세요">
+<!--    <section id="hi">-->
+<!--        <h2>9room 인삿말</h2>-->
+<!--        <img src="img/인사 안녕하세요-단순화.svg" alt="안녕하세요">-->
 
-    <p>일상을 살면서 처음 보는 '무언가'에 눈길을 빼앗긴 적이 있으신가요?</p>
-    <p>'무언가'는 대부분 시각적인 매체로써 찰나의 순간 주의를 환기시키고 관심과 호기심이 생기게 만듭니다.</p>
-    <P>스쳐지나가는 작은 우연 속에서 우리는 매체가 전하는 '정보/지식'을 통해</P>
-    <P>새로운 도전에 일정을 불태우기도하며, 고민 하던 일의 답을 찾기도 합니다.</P>
-    <P>저는 여러분들의 일상들 사이에서 반짝일 수 있는 '새로운 무언가'를 다정함과 설레임으로 디자인하고 싶습니다.</P>
-</section>
+<!--        <p>일상을 살면서 처음 보는 '무언가'에 눈길을 빼앗긴 적이 있으신가요?</p>-->
+<!--        <p>'무언가'는 대부분 시각적인 매체로써 찰나의 순간 주의를 환기시키고 관심과 호기심이 생기게 만듭니다.</p>-->
+<!--        <P>스쳐지나가는 작은 우연 속에서 우리는 매체가 전하는 '정보/지식'을 통해</P>-->
+<!--        <P>새로운 도전에 일정을 불태우기도하며, 고민 하던 일의 답을 찾기도 합니다.</P>-->
+<!--        <P>저는 여러분들의 일상들 사이에서 반짝일 수 있는 '새로운 무언가'를 다정함과 설레임으로 디자인하고 싶습니다.</P>-->
+<!--    </section>-->
 
-<section id="profile">
-<h2>9room 자기소개</h2>
-    <article>
-    <h3>자기소개</h3>
-    <ul>
-        <li>jung ye rin <br> 丁叡潾</li>
-        <li>
-            <P>광고 / 편집 디자인 업무를 시작으로 디자이너로서 업무를 시작했습니다.</P>
-            <P>최근 움직이는 디자인에 빠지게 되면서 새로운 분야에 도전중입니다.</P>
-            <P>영상 그래픽 디자이너로 취업을 하기위해 단련 중 입니다.</P>
-        </li>
-        <li><img src="https://placehold.co/600x400/orange/white" alt="홈페이지 주인장 사진"></li>
-        <li><button>지금까지의 발자취</button></li>
-        <li>
-            <p>1998.06.03</p>
-            <p>정예린</p>
-        </li>
-        <li>
-            <h4>프로그램 활용능력</h4>
-            <Ul>
-                <li>일러스트 Ai : 100</li>
-                <li>포토샵 : 60</li>
-                <li>에프터 이펙트 : 50</li>
-                <li>프리미엄 프로 : 50</li>
-                <li>씨네마4D : 20</li>
-                <li>비쥬얼 스튜디오 : 10</li>
-            </Ul>
-        </li>
-    </ul>
-    </article>
-</section>
+<!--    <section id="profile">-->
+<!--        <h2>9room 자기소개</h2>-->
+<!--        <article>-->
+<!--            <h3>자기소개</h3>-->
+<!--            <ul>-->
+<!--                <li>jung ye rin <br> 丁叡潾</li>-->
+<!--                <li>-->
+<!--                    <P>광고 / 편집 디자인 업무를 시작으로 디자이너로서 업무를 시작했습니다.</P>-->
+<!--                    <P>최근 움직이는 디자인에 빠지게 되면서 새로운 분야에 도전중입니다.</P>-->
+<!--                    <P>영상 그래픽 디자이너로 취업을 하기위해 단련 중 입니다.</P>-->
+<!--                </li>-->
+<!--                <li><img src="https://placehold.co/600x400/orange/white" alt="홈페이지 주인장 사진"></li>-->
+<!--                <li>-->
+<!--                    <button>지금까지의 발자취</button>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <p>1998.06.03</p>-->
+<!--                    <p>정예린</p>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <h4>프로그램 활용능력</h4>-->
+<!--                    <Ul>-->
+<!--                        <li>일러스트 Ai : 100</li>-->
+<!--                        <li>포토샵 : 60</li>-->
+<!--                        <li>에프터 이펙트 : 50</li>-->
+<!--                        <li>프리미엄 프로 : 50</li>-->
+<!--                        <li>씨네마4D : 20</li>-->
+<!--                        <li>비쥬얼 스튜디오 : 10</li>-->
+<!--                    </Ul>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </article>-->
+<!--    </section>-->
 
-<section id="gallery">
-<h2>9room 갤러리</h2>
-<!-- 좌측메뉴 -->
-<ul>
-    <li><button>일러스트</button></li>
-    <li><button>포토샵</button></li>
-    <li><button>에프터이펙트</button></li>
-    <li><button>비쥬얼스튜디오</button></li>
-    <li><button>씨네마4D</button></li>
-</ul>
-<ol>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품1"></li>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품2"></li>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품3"></li>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품4"></li>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품5"></li>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품6"></li>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품7"></li>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품8"></li>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품9"></li>
-    <li><img src="https://placehold.co/300x300/orange/white" alt="작품10"></li>
-</ol>
+<!--    <section id="gallery">-->
+<!--        <h2>9room 갤러리</h2>-->
+<!--        &lt;!&ndash; 좌측메뉴 &ndash;&gt;-->
+<!--        <ul>-->
+<!--            <li>-->
+<!--                <button>일러스트</button>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <button>포토샵</button>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <button>에프터이펙트</button>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <button>비쥬얼스튜디오</button>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <button>씨네마4D</button>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <ol>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품1"></li>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품2"></li>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품3"></li>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품4"></li>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품5"></li>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품6"></li>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품7"></li>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품8"></li>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품9"></li>-->
+<!--            <li><img src="https://placehold.co/300x300/orange/white" alt="작품10"></li>-->
+<!--        </ol>-->
 
-<!-- 팝업창  디자인 미리만들기 -->
+<!--        &lt;!&ndash; 팝업창  디자인 미리만들기 &ndash;&gt;-->
 
-<a href="https://guroom.tistory.com/">작업 일기</a>
-</section>
+<!--        <a href="https://guroom.tistory.com/">작업 일기</a>-->
+<!--    </section>-->
 
-<section id="contact">
-<h2>9room 연락/문의</h2>
-<h3>연락</h3>
-<p>문의 및 상담/질문은 아래 이메일로 부담없이 연락 주십시오.<br>빠르게 확인 후 도와 드리겠습니다.</p>
-<P>E-MAIL : hi@9room.blog</P>
-<P>원활한 소통을 위해 의뢰서에 필요 사항을 구체적으로 기입하신 후 보내주면 감사하겠습니다.</P>
-<p>안내사항에 기재되어있지않는 사항은 메일로 문의주세요.</p>
-<form>
-    <h4>안내사항</h4>
-    <ul>
-        <li>본 의뢰서에서 작성되는 모든 정보는 [문의/의뢰]서비스에만 이용됩니다.<br> 해당 사실을 미리 고지하며, 의뢰서 제출과 동시에 정보수집에 동의함으로 간주합니다.</li>
-        <li>의뢰서를 작성 후 제출해주시면 일주일이내로 답변을 드리겠습니다.</li>
-        <li>의뢰서를 제출 후 작업 진행을 필수로 진행하지 않으셔도됩니다만 악의적인 문의는 답변드리지않습니다.</li>
-        <li>자료는 모두 취합하여 zip.으로 압축한 뒤 아래 드라이브링크를 통해 업로드해주시거나, 업로드된 드라이브링크 / 참고자료링크를 아래 칸에 기재해주십시오.</li>
-        <li>제공되는 업로드 드라이브 링크를 스팸과 같은 범죄에 사용하지 말아주십시오. [문의/의뢰]와 관련없는 내용은 임의로 삭제 처리 될수있음을 알려드립니다.</li>
-        
-    </ul>
-    <fieldset>
-        <legend>의뢰서 작성</legend>
-        <!-- 의뢰서 폼양식 -->
-        성함 : <input type="text"  placeholder="기재해주시는 이름으로 연락을 드립니다."><br>
-        소통 이메일 : <input type="email"><br>
-        문의내용 : 
-        <select>
-            <option>의뢰</option>
-            <option>협업제의</option>
-            <option>기타</option>
-        </select> <br>
-        <textarea name="Q" cols="50" rows="30" placeholder="문의내용 상세히 기입해주시면 보다 빠른 상담이 가능합니다." maxlength="300"></textarea><br>
-        자료 전달 링크 : <input type="text" placeholder="드라이브링크/참고자료링크"><br>
-        [ 업로드 드라이브링크 - <a href="http://naver.me/5VlrjsOx">http://naver.me/5VlrjsOx</a> pw-91008 * 접근 제한 10회, 저장 일수를 7일로 규정합니다. ]
-        <br>
-        <input type="submit">
-    </fieldset>
-</form>
-</section>
+<!--    <section id="contact">-->
+<!--        <h2>9room 연락/문의</h2>-->
+<!--        <h3>연락</h3>-->
+<!--        <p>문의 및 상담/질문은 아래 이메일로 부담없이 연락 주십시오.<br>빠르게 확인 후 도와 드리겠습니다.</p>-->
+<!--        <P>E-MAIL : hi@9room.blog</P>-->
+<!--        <P>원활한 소통을 위해 의뢰서에 필요 사항을 구체적으로 기입하신 후 보내주면 감사하겠습니다.</P>-->
+<!--        <p>안내사항에 기재되어있지않는 사항은 메일로 문의주세요.</p>-->
+<!--        <form>-->
+<!--            <h4>안내사항</h4>-->
+<!--            <ul>-->
+<!--                <li>본 의뢰서에서 작성되는 모든 정보는 [문의/의뢰]서비스에만 이용됩니다.<br> 해당 사실을 미리 고지하며, 의뢰서 제출과 동시에 정보수집에 동의함으로 간주합니다.</li>-->
+<!--                <li>의뢰서를 작성 후 제출해주시면 일주일이내로 답변을 드리겠습니다.</li>-->
+<!--                <li>의뢰서를 제출 후 작업 진행을 필수로 진행하지 않으셔도됩니다만 악의적인 문의는 답변드리지않습니다.</li>-->
+<!--                <li>자료는 모두 취합하여 zip.으로 압축한 뒤 아래 드라이브링크를 통해 업로드해주시거나, 업로드된 드라이브링크 / 참고자료링크를 아래 칸에 기재해주십시오.</li>-->
+<!--                <li>제공되는 업로드 드라이브 링크를 스팸과 같은 범죄에 사용하지 말아주십시오. [문의/의뢰]와 관련없는 내용은 임의로 삭제 처리 될수있음을 알려드립니다.</li>-->
+
+<!--            </ul>-->
+<!--            <fieldset>-->
+<!--                <legend>의뢰서 작성</legend>-->
+<!--                &lt;!&ndash; 의뢰서 폼양식 &ndash;&gt;-->
+<!--                성함 : <input type="text" placeholder="기재해주시는 이름으로 연락을 드립니다."><br>-->
+<!--                소통 이메일 : <input type="email"><br>-->
+<!--                문의내용 :-->
+<!--                <select>-->
+<!--                    <option>의뢰</option>-->
+<!--                    <option>협업제의</option>-->
+<!--                    <option>기타</option>-->
+<!--                </select> <br>-->
+<!--                <textarea name="Q" cols="50" rows="30" placeholder="문의내용 상세히 기입해주시면 보다 빠른 상담이 가능합니다."-->
+<!--                          maxlength="300"></textarea><br>-->
+<!--                자료 전달 링크 : <input type="text" placeholder="드라이브링크/참고자료링크"><br>-->
+<!--                [ 업로드 드라이브링크 - <a href="http://naver.me/5VlrjsOx">http://naver.me/5VlrjsOx</a> pw-91008 * 접근 제한 10회, 저장-->
+<!--                일수를 7일로 규정합니다. ]-->
+<!--                <br>-->
+<!--                <input type="submit">-->
+<!--            </fieldset>-->
+<!--        </form>-->
+<!--    </section>-->
 </main>
 
-<footer>
-<h2>9room 홈페이지 저작권안내</h2>
-<p>Copyright ©9room All Rights Reserved.</p>
-<ul>
-    <li>이 홈페이지는 비영리 포트폴리오 사이트 입니다.
-        본문, 사진 및 그림의 모든 것에 대한 저작권은 제작자에 있으며, 무단 복제 및 전재는 엄격히 금지됩니다.</li>
-    <li>사전에 협의 된 게시 이외의 다른 웹사이트, 인쇄물, 전자 미디어 등으로의 전재는 일절 허가되지 않습니다.
-        무단 전재에는 법적 조치를 취할 수 있습니다. 양해 부탁드립니다.</li>
-</ul>
-</footer>
+<!--<footer>-->
+<!--    <h2>9room 홈페이지 저작권안내</h2>-->
+<!--    <p>Copyright ©9room All Rights Reserved.</p>-->
+<!--    <ul>-->
+<!--        <li>이 홈페이지는 비영리 포트폴리오 사이트 입니다.-->
+<!--            본문, 사진 및 그림의 모든 것에 대한 저작권은 제작자에 있으며, 무단 복제 및 전재는 엄격히 금지됩니다.-->
+<!--        </li>-->
+<!--        <li>사전에 협의 된 게시 이외의 다른 웹사이트, 인쇄물, 전자 미디어 등으로의 전재는 일절 허가되지 않습니다.-->
+<!--            무단 전재에는 법적 조치를 취할 수 있습니다. 양해 부탁드립니다.-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</footer>-->
 
 </body>
 </html>
